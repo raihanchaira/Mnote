@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MNotes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="data_tittle">
+        <item>What is Mnote?</item>
+        <item>How to add an order?</item>
+        <item>What is the summary?</item>
+        <item>How to change my user account?</item>
+    </string-array>
+
+    <string-array name="data_field">
+        <item>
+            Q: What is Mnote? \n\n
+            A: Mnote is a multiplatform app designed to assist restaurants in efficiently recording and managing daily orders. It streamlines the process of taking orders, organizing them, and ensuring accurate records for improved operational efficiency.
+        </item>
+        <item>
+            Q: How to add an order? \n\n
+            A: First, go to the dashboard, and you will see a button with a plus icon. Click on it. Next, a pop-up layout called "Add New Order" will appear. Fill in the order name and amount fields. Once you have finished, click the add button, and your order will appear on the dashboard.
+        </item>
+        <item>
+            Q: What is the summary? \n\n
+            A: At the bottom of the app, you will see a bottom navigation bar with a paper icon. Tap on it to access the summary layout. The summary allows you to filter your orders based on the calendar date.
+        </item>
+        <item>
+            Q: How can I change my user account? \n\n
+            A: In the top right corner of the dashboard, you will see an avatar. Tap on it to access the user account settings. In the settings, you can update fields such as your name, phone number, username, and more. After making the desired changes, click the update button, and you will return to the dashboard.
+        </item>
+    </string-array>
+
+</resources>
