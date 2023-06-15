@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:padding="8dp"
+    tools:context=".ui.faqninfo.DetailFaqActivity">
+
+    <ImageView
+        android:id="@+id/bt_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/mnote"
+        android:paddingBottom="16dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        tools:text="What is Mnote?"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dmsans_bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        tools:text="Q: How can I change my user account? \n\n
+A: In the top right corner of the dashboard, you will see an avatar. Tap on it to access the user account settings. In the settings, you can update fields such as your name, phone number, username, and more. After making the desired changes, click the update button, and you will return to the dashboard.
+"
+        android:textColor="@color/greyMnote"
+        android:fontFamily="@font/dmsans_regular"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_tittle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

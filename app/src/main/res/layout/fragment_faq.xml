@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:layout_margin="16dp"
+    android:background="@color/white"
+    tools:context=".ui.faqninfo.FaqFragment">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/mnote"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/moto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dmsans_italic"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:text="Effortlessly track your food orders with MNote - Your ultimate food diary!"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moto"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_faq" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
